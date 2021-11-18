@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<title>DefiZone - Details</title>
+
+<% if(filenameMap) { %>
+        <!-- <link rel="stylesheet" href="<%= PP %>/css/<%= filenameMap['index.css'] %>"> -->
+        <link rel="stylesheet" href="<%= PP %>/css/<%= filenameMap['ui.css'] %>">
+        <link rel="stylesheet" href="<%= PP %>/css/<%= filenameMap['fonts.css'] %>">
+        <link rel="stylesheet" href="<%= PP %>/css/<%= filenameMap['style.css'] %>">
+        <link rel="preload" href="<%= PP %>/js/<%= filenameMap['vendor.js'] %>" as="script">
+        <link rel="prefetch" href="<%= PP %>/js/<%= filenameMap['vendor.js'] %>">
+        <link rel="preload" href="<%= PP %>/js/<%= filenameMap['app.js'] %>" as="script">
+        <link rel="prefetch" href="<%= PP %>/js/<%= filenameMap['app.js'] %>">
+        <link rel="prefetch" href="<%= PP %>/js/<%= filenameMap['ui.js'] %>">
+    <% } else { %>
+        <!-- <link rel="stylesheet" href="<%= PP %>/css/index.css"> -->
+        <link rel="stylesheet" href="<%= PP %>/css/ui.css">
+        <link rel="stylesheet" href="<%= PP %>/css/fonts.css">
+        <link rel="stylesheet" href="<%= PP %>/css/style.css">
+        <link rel="preload" href="<%= PP %>/js/vendor.js" as="script">
+        <link rel="prefetch" href="<%= PP %>/js/vendor.js">
+        <link rel="preload" href="<%= PP %>/js/app.js" as="script">
+        <link rel="prefetch" href="<%= PP %>/js/app.js">
+        <link rel="prefetch" href="<%= PP %>/js/ui.js">
+    <% } %>
+
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="<%= PP %>/favicon.svg">
+<link rel="apple-touch-icon" href="<%= PP %>/apple-touch-icon.png">
+<link rel="manifest" href="<%= PP %>/manifest.json">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

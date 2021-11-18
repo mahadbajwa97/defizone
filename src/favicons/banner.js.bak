@@ -1,0 +1,31 @@
+  let bannerdata = {    
+    "ads": [
+        ["images/top/testbanner11.png", "images/top/testbanner12.png"],
+        ["images/top/testbanner21.png", "images/top/testbanner22.png"],
+        ["images/top/testbanner31.png", "images/top/testbanner32.png"],
+        ["images/top/testbanner41.png", "images/top/testbanner42.png"],
+        ["images/top/testbanner51.png", "images/top/testbanner52.png"]
+    ],
+    "ads_selected": [
+        [1,1], [2,1], [3,1], [4,2], [5,1]
+    ],
+    "tweets":[
+        ["images/top/tweets11.png", "images/top/tweets12.png"],
+        ["images/top/tweets21.png", "images/top/tweets22.png"],
+        ["images/top/tweets31.png", "images/top/tweets32.png"],
+        ["images/top/tweets41.png", "images/top/tweets42.png"],
+        ["images/top/tweets51.png", "images/top/tweets52.png"]
+    ],
+    "t_links":[
+        "https://www.test1.com",
+        "https://www.test2.com",
+        "https://www.test3.com",
+        "https://www.test4.com",
+        "https://www.test5.com",
+        "https://www.test6.com",
+        "https://www.test7.com"
+    ],
+    "tweets_selected": [
+        [1,1,4], [2,1,5], [3,1,3], [4,2,3], [5,1,1]
+    ]
+  }

@@ -1,0 +1,753 @@
+// @import 'sanitize';
+// @import 'html5boilerplate';
+// @import 'base';
+// @import 'helpers';
+// @import 'footer';
+@import 'print';
+@import 'themes';
+
+body, input {
+  font-family: monospace;
+}
+
+.border {
+    border-style: solid;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--main-background-color);
+}
+
+.modal-content {
+  background-color: var(--main-background-color);
+  margin: 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-close {
+  padding: 5px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background-color);
+  height: 40px;
+  color: var(--main-text-color);
+  padding: 8px 4px;
+  font-size: 22px;
+
+}
+
+#quick-dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > li {
+    width: 100%;
+  }
+
+  > li > a {
+    width: 100%;
+    height: 50px;
+    padding: 0px 4px;
+    font-size: 22px;
+    height: 100%;
+  }
+
+  > li:hover {
+    background: rgba(0,0,0,0.2)
+  }
+
+}
+
+.modal {
+background-color: var(--main-background-color);
+}
+
+.modal-content {
+background-color: var(--main-background-color);
+}
+
+.modal-input {
+background-color: var(--main-background-color);
+color: var(--main-text-color);
+}
+
+#quick-dropdown {
+color: var(--main-text-color);
+> li:hover, > li.active {
+  background: rgba(255,255,255,0.2)
+}
+}
+
+body {
+background-color: var(--main-background-color);
+color: var(--main-text-color);
+}
+
+a {
+  color: var(--main-text-color);
+}
+
+a:visited {
+    color: var(--visited-text-color);
+}
+
+.border {
+  border-style: solid;
+  border-color: var(--main-text-color);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  display: block;
+  max-width: 350px;
+  text-align: center;
+  font-size: 42px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 5px solid var(--main-text-color);
+  padding: 10px 0;
+}
+
+p {
+  font-size: 22px;
+  text-align: center;
+}
+
+code {
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.3em;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  overflow-x: auto;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+.loader-home {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-size: 22px;
+}
+.loader-home div {
+  width: 100%;
+  font-weight: 700;
+}
+.loader-home div + div {
+  margin-top: 50px;
+}
+.loader--1:before {
+  content: '';
+  -webkit-animation: anim1 300ms steps(1, end) infinite;
+  animation: anim1 300ms steps(1, end) infinite;
+}
+
+.loader--2:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim2 700ms steps(1, end) infinite;
+  animation: anim2 700ms steps(1, end) infinite;
+}
+.loader--2:after {
+  content: ".loader--2";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.loader--3:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim3 700ms steps(1, end) infinite;
+  animation: anim3 700ms steps(1, end) infinite;
+}
+.loader--3:after {
+  content: ".loader--3";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.loader--4:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim4 700ms steps(1, end) infinite;
+  animation: anim4 700ms steps(1, end) infinite;
+}
+.loader--4:after {
+  content: ".loader--4";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.loader--5:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim5 700ms steps(1, end) infinite;
+  animation: anim5 700ms steps(1, end) infinite;
+}
+.loader--5:after {
+  content: ".loader--5";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.loader--6:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim6 700ms steps(1, end) infinite;
+  animation: anim6 700ms steps(1, end) infinite;
+}
+.loader--6:after {
+  content: ".loader--6";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.loader--7:before {
+  content: '';
+  color: var(--main-text-color);
+  -webkit-animation: anim7 700ms steps(1, end) infinite;
+  animation: anim7 700ms steps(1, end) infinite;
+}
+.loader--7:after {
+  content: ".loader--7";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .7em;
+  font-weight: 200;
+  margin-left: 10px;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+@-webkit-keyframes anim1 {
+  0%, 100% {
+    content: "[----]";
+  }
+  20% {
+    content: "[=---]";
+  }
+  40% {
+    content: "[-=--]";
+  }
+  60% {
+    content: "[--=-]";
+  }
+  80% {
+    content: "[---=]";
+  }
+}
+
+@keyframes anim1 {
+  0%, 100% {
+    content: "[....]";
+  }
+  20% {
+    content: "[=...]";
+  }
+  40% {
+    content: "[.=..]";
+  }
+  60% {
+    content: "[..=.]";
+  }
+  80% {
+    content: "[...=]";
+  }
+}
+@-webkit-keyframes anim2 {
+  0%, 100% {
+    content: "{/////}";
+  }
+  20% {
+    content: "{~////}";
+  }
+  40% {
+    content: "{/~///}";
+  }
+  60% {
+    content: "{//~//}";
+  }
+  80% {
+    content: "{////~}";
+  }
+}
+@keyframes anim2 {
+  0%, 100% {
+    content: "{/////}";
+  }
+  20% {
+    content: "{~////}";
+  }
+  40% {
+    content: "{/~///}";
+  }
+  60% {
+    content: "{//~//}";
+  }
+  80% {
+    content: "{////~}";
+  }
+}
+@-webkit-keyframes anim3 {
+  0%, 100% {
+    content: "(●)";
+  }
+  50% {
+    content: "(⚬)";
+  }
+}
+@keyframes anim3 {
+  0%, 100% {
+    content: "(●)";
+  }
+  50% {
+    content: "(⚬)";
+  }
+}
+@-webkit-keyframes anim4 {
+  0%, 100% {
+    content: "↑";
+  }
+  12.5% {
+    content: "↗";
+  }
+  25% {
+    content: "→";
+  }
+  37.5% {
+    content: "↘";
+  }
+  50% {
+    content: "↓";
+  }
+  62.5% {
+    content: "↙";
+  }
+  75% {
+    content: "←";
+  }
+  87.5% {
+    content: "↖";
+  }
+}
+@keyframes anim4 {
+  0%, 100% {
+    content: "↑";
+  }
+  12.5% {
+    content: "↗";
+  }
+  25% {
+    content: "→";
+  }
+  37.5% {
+    content: "↘";
+  }
+  50% {
+    content: "↓";
+  }
+  62.5% {
+    content: "↙";
+  }
+  75% {
+    content: "←";
+  }
+  87.5% {
+    content: "↖";
+  }
+}
+@-webkit-keyframes anim5 {
+  0%, 100% {
+    content: "⊏";
+  }
+  25% {
+    content: "⊓";
+  }
+  50% {
+    content: "⊐";
+  }
+  75% {
+    content: "⊔";
+  }
+}
+@keyframes anim5 {
+  0%, 100% {
+    content: "⊏";
+  }
+  25% {
+    content: "⊓";
+  }
+  50% {
+    content: "⊐";
+  }
+  75% {
+    content: "⊔";
+  }
+}
+@-webkit-keyframes anim6 {
+  0%, 100% {
+    content: "×";
+  }
+  50% {
+    content: "+";
+  }
+}
+@keyframes anim6 {
+  0%, 100% {
+    content: "×";
+  }
+  50% {
+    content: "+";
+  }
+}
+@-webkit-keyframes anim7 {
+  0%, 100% {
+    content: "☰";
+  }
+  16.6666666667% {
+    content: "☱";
+  }
+  33.3333333333% {
+    content: "☳";
+  }
+  50% {
+    content: "☷";
+  }
+  66.6666666667% {
+    content: "☶";
+  }
+  83.3333333333% {
+    content: "☴";
+  }
+}
+@keyframes anim7 {
+  0%, 100% {
+    content: "☰";
+  }
+  16.6666666667% {
+    content: "☱";
+  }
+  33.3333333333% {
+    content: "☳";
+  }
+  50% {
+    content: "☷";
+  }
+  66.6666666667% {
+    content: "☶";
+  }
+  83.3333333333% {
+    content: "☴";
+  }
+}
+
+.mcn-reviewed {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+@import "diff.scss";
+
+
+button, input, select, textarea {
+  /* I want my default button style back */
+  font-size: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/furley_bg_@2X.png);
+  background-size: 600px 600px;
+}
+
+.container {
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+#spinner {
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: 100px;
+}
+
+.loading-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0);
+transition: background-color .2s ease-out;
+}
+
+.loading-anim {
+position: relative;
+width: 200px;
+height: 200px;
+margin: auto;
+perspective: 800px;
+transform-style: preserve-3d;
+transition: all .2s ease-out;
+}
+.loading-anim .circle {
+width: 100%;
+height: 100%;
+animation: spin 5s linear infinite;
+}
+.loading-anim .border {
+position: absolute;
+border-radius: 50%;
+border: 3px solid #e34981;
+}
+.loading-anim .out {
+top: 15%;
+left: 15%;
+width: 70%;
+height: 70%;
+border-left-color: transparent;
+border-right-color: transparent;
+animation: spin 2s linear reverse infinite;
+}
+.loading-anim .in {
+top: 18%;
+left: 18%;
+width: 64%;
+height: 64%;
+border-top-color: transparent;
+border-bottom-color: transparent;
+animation: spin 2s linear infinite;
+}
+.loading-anim .mid {
+top: 40%;
+left: 40%;
+width: 20%;
+height: 20%;
+border-left-color: transparent;
+border-right-color: transparent;
+animation: spin 1s linear infinite;
+}
+
+.loading .loading-anim {
+transform: translateZ(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1);
+opacity: 1;
+}
+
+.loading .loading-overlay {
+background: rgba(255, 255, 255, 0.5);
+}
+
+.dot {
+position: absolute;
+display: block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #e34981;
+animation: jitter 5s ease-in-out infinite, fade-in-out 5s linear infinite;
+}
+
+.dot:nth-child(1) {
+top: 90px;
+left: 180px;
+animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+top: 135px;
+left: 168px;
+animation-delay: 0.41667s;
+}
+
+.dot:nth-child(3) {
+top: 168px;
+left: 135px;
+animation-delay: 0.83333s;
+}
+
+.dot:nth-child(4) {
+top: 180px;
+left: 90px;
+animation-delay: 1.25s;
+}
+
+.dot:nth-child(5) {
+top: 168px;
+left: 45px;
+animation-delay: 1.66667s;
+}
+
+.dot:nth-child(6) {
+top: 135px;
+left: 12px;
+animation-delay: 2.08333s;
+}
+
+.dot:nth-child(7) {
+top: 90px;
+left: 0px;
+animation-delay: 2.5s;
+}
+
+.dot:nth-child(8) {
+top: 45px;
+left: 12px;
+animation-delay: 2.91667s;
+}
+
+.dot:nth-child(9) {
+top: 12px;
+left: 45px;
+animation-delay: 3.33333s;
+}
+
+.dot:nth-child(10) {
+top: 0px;
+left: 90px;
+animation-delay: 3.75s;
+}
+
+.dot:nth-child(11) {
+top: 12px;
+left: 135px;
+animation-delay: 4.16667s;
+}
+
+.dot:nth-child(12) {
+top: 45px;
+left: 168px;
+animation-delay: 4.58333s;
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+@keyframes jitter {
+0% {
+  transform: scale(1, 1);
+}
+25% {
+  transform: scale(0.7, 0.7);
+}
+50% {
+  transform: scale(1, 1);
+}
+75% {
+  transform: scale(1.3, 1.3);
+}
+100% {
+  transform: scale(1, 1);
+}
+}
+@keyframes fade-in-out {
+0% {
+  opacity: 0.8;
+}
+25% {
+  opacity: 0.2;
+}
+75% {
+  opacity: 1;
+}
+100% {
+  opacity: 0.8;
+}
+}

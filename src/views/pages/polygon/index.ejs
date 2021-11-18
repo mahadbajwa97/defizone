@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <%- include(`${partials}/head`); -%>
+  <body class="home inner" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+        
+    <header class="header show" style="background-color:#fff">
+        <div class="container">
+            <div class="header__burger only-tablet">
+                <svg width="52" height="9" viewBox="0 0 52 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="52" y1="0.5" x2="-4.45684e-08" y2="0.499996" stroke="black"></line>
+                    <line x1="52" y1="8.5" x2="-4.45684e-08" y2="8.5" stroke="black"></line>
+                </svg>
+                <span>Menu</span>
+            </div>
+            <div class="header__link only-desk d-none">
+                <a href="#" onclick="window.history.back();"><img src="../../../../images/back.png" style="width: 32px;"></a>
+            </div>
+            <div class="header__logo">
+                <a href="/">
+                    <img src="../../../../images/logo.png" width="184" alt="" />
+                </a>
+            </div>
+            <div class="header__link header__button">
+                <select class="header_btn" onchange="chooseChain(this)">
+                    <option value="bsc">Binance Chain</option>
+                    <option value="polygon" selected>Polygon Chain</option>
+                </select>
+                <a href="#" class="header__btn" id='btn_connect_wallet' onclick="connectWallet();">
+                    <span>Connect Wallet</span>
+                </a>
+                <span id='sp_address' class="header_address"></span>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="container">
+            <div class="menu__social">
+                <span>Our Social</span>
+                <div class="menu__social-items">
+                    <a href="#" class="menu__social-item" target="_blank">
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52535 1.62631C3.50501 0.703141 2.84485 0 1.77285 0C0.70084 0 0 0.703141 0 1.62631C0 2.53036 0.680126 3.25374 1.73217 3.25374H1.75219C2.84485 3.25374 3.52535 2.53036 3.52535 1.62631ZM3.3192 4.53897H0.185542V13.9543H3.3192V4.53897ZM11.0123 4.31778C13.0744 4.31778 14.6203 5.66376 14.6203 8.55575L14.6202 13.9542H11.4866V8.91701C11.4866 7.65176 11.0332 6.7884 9.89878 6.7884C9.03304 6.7884 8.51737 7.37043 8.29089 7.9326C8.20804 8.13406 8.1877 8.41477 8.1877 8.69617V13.9545H5.05366C5.05366 13.9545 5.09496 5.42261 5.05366 4.53912H8.1877V5.87273C8.60361 5.23164 9.34851 4.31778 11.0123 4.31778Z" fill="black"></path>
+                        </svg>
+                    </a>
+    
+                </div>
+
+                <div class="menu__social-items">
+                <a href="#" class="header__btn">
+                    <span style="margin-bottom:0px;">Connect Wallet</span>
+                </a>
+            </div>
+            </div>
+            <p class="menu__copyright">&copy; 2021 DefiZone. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <main>
+        <section class="heron animate">
+            <div class="container">
+                <div class="heron__one">
+                    <div class="heron__circle">
+                        <img src="../../../../images/Ellipse301.png" width="1281" height="1281" alt="" class="enable_rotate" style="animation-duration: 16.6667s; animation-delay: -9.13733s; opacity: 1;">
+                    </div>
+                    <div class="heron__circle frfl">
+                        <img src="../../../../images/Ellipse3011.png" width="1281" height="1281" class="heron__frfl enable_rotate" alt="" style="animation-duration: 16.6667s; animation-delay: -9.13733s; opacity: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="heron__circle-one">
+                            <circle class="progress" fill="none" stroke-linecap="round" cx="20" cy="20" r="19"></circle>
+                        </svg>
+                    </div>
+                    
+                    <div class="heron__content inner_page">
+                        <!-- Content here -->
+                        <div class="list_header" >
+                            <div class="vault-header w-100">                                
+                                <div class="information-container">
+                                    <div class="vault-staked" style="width: 27%;">
+                                        <div class="total">
+                                            <span class="small-info">Project Name</span>
+                                        </div>
+                                    </div>
+                                    <div class="vault-apy" style="width: 27%;">
+                                        <div class="total">
+                                            <span class="small-info">LP</span>
+                                        </div>                                    
+                                    </div>
+                                    <div class="vault-earned" style="width: 27%;">
+                                        <div class="total">
+                                            <span class="small-info">Reward Tokens</span>
+                                        </div>
+                                    </div>
+                                    <div class="vault-liquidity" style="width: 27%;">
+                                        <div class="total">
+                                            <span class="small-info">Website</span>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" id="panel">                                                       
+                        </div>                        
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <img class="mouse" src="../../../../images/down-arrow.gif" alt="" width="30" />
+            
+        </section>
+    </main>
+  
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <%- include(`${partials}/scripts`, {scriptname: 'polygon'}); -%>
+    <script>
+        $(document).ready(async function() {
+            const accounts = await window.ethereum.request({method: 'eth_accounts'});  
+            if (accounts && accounts.length > 0) {
+                $('#btn_connect_wallet').css('display','none')
+                $('#sp_address').html(accounts[0].substring(0, 3) + '...' + accounts[0].substring(accounts[0].length-4))
+            }
+
+        });
+
+        // async function connect_wallet() {
+        //     const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});   
+        //     if (accounts.length > 0) {
+        //         $('#btn_connect_wallet').css('display','none')
+        //         $('#sp_address').html(accounts[0].substring(0, 3) + '...' + accounts[0].substring(accounts[0].length-4))
+        //     }       
+        // }  
+        
+        function chooseChain(target) {
+            window.location.href = '/' + target.value;
+        }
+        
+        $(document).ready(function() {            
+
+            // from polygon.js             
+            let htmlstr =''
+            for(i=0; i< tableData.rows.length; i++) {
+
+                htmlstr += '<div class="vault-content w-100">'
+                let _pool_prov = tableData.rows[i][0]  
+                htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">' + _pool_prov + '</span> </div></div>'
+                let _lp = tableData.rows[i][1]
+                _lp = _lp.substring(0, _lp.indexOf('">')) + '?chain=polygon&prj=' +  _pool_prov +  _lp.substring( _lp.indexOf('">'))
+                htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">'+
+                     '<button type="button" class="btn btn-default form-button">'+_lp +'</button>'+'</span></div></div>'
+                let _reward_token = tableData.rows[i][2] 
+                htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">' + _reward_token + '</span> </div></div>'   
+                let _info = tableData.rows[i][3] 
+                htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">' + _info + '</span> </div></div>'
+                htmlstr += '</div> <br/>'                
+            }  
+
+            $('.panel').html(htmlstr)         
+            
+            var panel = document.getElementById('panel');
+            panel.style.maxHeight = panel.scrollHeight + "px";
+
+            // checking account is changed
+            window.ethereum && window.ethereum.on('accountsChanged', async function (accounts) {
+                console.log('==== accountsChanged ====')    
+                window.location.reload();
+                
+            })
+            
+            // checking chain is changed
+            window.ethereum && window.ethereum.on('chainChanged', async function (networkId) {
+                console.log('==== chainChanged ====')    
+                window.location.reload();
+            })
+        })
+
+    </script>
+            <%- include(`${partials}/footer`); -%></body>
+   
+    
+</html> 

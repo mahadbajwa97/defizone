@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+    <%- include(`${partials}/head`); -%>
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  <body class="home" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+<style>
+    
+        .alert{
+    display: none;
+}
+    
+</style>
+    <body style="overflow: scroll"  cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">  
+        <header class="header show" style="background-color:#fff">
+            
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="../../../../images/logo.png" width="184" alt="" />
+                    </a>
+                </div>
+                     
+        </header>
+        
+        
+            <div class="container" style="width: auto; margin: 0; padding-right: 20px;">
+                <div class="heron__one" style="padding-right: 30px;">
+                    <div class="heron__circle">
+                        <img src="../../../../images/Ellipse301.png" width="1281" height="1281" alt="" class="enable_rotate" style="animation-duration: 16.6667s; animation-delay: -9.13733s; opacity: 1;">
+                    </div>
+                    <div class="heron__circle frfl">
+                        <img src="../../../../images/Ellipse3011.png" width="1281" height="1281" class="heron__frfl enable_rotate" alt="" style="animation-duration: 16.6667s; animation-delay: -9.13733s; opacity: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" class="heron__circle-one">
+                            <circle class="progress" fill="none" stroke-linecap="round" cx="20" cy="20" r="19"></circle>
+                        </svg>
+                    </div>
+                        
+                        <span class="filters" style="margin-left: auto;margin-right: 0; overflow: scroll">
+                            <span class="form_area">
+                               <form style="position: relative; overflow: scroll; margin-top: 50px;" action="/banner_update.php" method="get"> 
+                                <h2>Ad Boards:</h2>
+                                    <h3>First Ad(Top Banner):</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[0][0]" name="ad[0][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[0][1]" name="ad[0][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    
+                                    <h3>2nd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[1][0]" name="ad[1][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[1][1]" name="ad[1][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>3rd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[2][0]" name="ad[2][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[2][1]" name="ad[2][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>4th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[3][0]" name="ad[3][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[3][1]" name="ad[3][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>5th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[4][0]" name="ad[4][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[4][1]" name="ad[4][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>6th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[5][0]" name="ad[5][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[5][1]" name="ad[5][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>7th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[6][0]" name="ad[6][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[6][1]" name="ad[6][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>8th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[7][0]" name="ad[7][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[7][1]" name="ad[7][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>9th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[8][0]" name="ad[8][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[8][1]" name="ad[8][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>10th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[9][0]" name="ad[9][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[9][1]" name="ad[9][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>11th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[10][0]" name="ad[10][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[10][1]" name="ad[10][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>12th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="ad[11][0]" name="ad[11][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="ad[11][1]" name="ad[11][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Tweet Boards:</h2>
+                                    <h3>Tweet of the day:</h3>
+                                    <label>Image path:<br/>
+                                        <input type="serach" id="tweet[0]" name="tweet[0]" class="input_type" id="search_token" >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input type="serach" id="tweet[1]" name="tweet[1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Video Boards:</h2>
+                                    <h3>Video of the day:</h3>
+                                    <label>Video path:<br/>
+                                        <input type="search" id="video" name="video" class="input_type" id="search_token" >
+                                    </label>
+                                    <h3></h3>
+                                    <div class="alert alert-success alert-dismissable">
+                                                Updated Successfully
+                                    </div>
+                                    <br/>
+                                    <button type="button" class="btn btn-default form-button" id="update" style="width:30%">Update</button>
+
+                                    </form>
+                                    
+                                    
+                             
+                                </span>
+                            </span>  
+                    
+                    
+            
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+            <script src="<%= PP %>/banner.js"></script>
+ 
+            <!-- <%- include(`${partials}/scripts`, {scriptname: 'changeBanner'}); -%> -->
+ 
+        
+<script>
+    
+    $(document).ready(async function(){
+    
+   
+
+let req = new XMLHttpRequest();
+
+req.onreadystatechange = () => {
+  if (req.readyState == XMLHttpRequest.DONE) {
+    let bannerdata=req.responseText;
+    bannerdata=JSON.parse(bannerdata);
+
+    for(var i=0; i<12; i++){
+                document.getElementById("ad["+i+"][0]").defaultValue = bannerdata.ads[bannerdata.ads_selected[i][0]-1];
+                document.getElementById("ad["+i+"][1]").defaultValue = bannerdata.ads_links[bannerdata.ads_selected[i][1]-1]; 
+        }
+
+        document.getElementById("tweet[0]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[0]-1];
+        document.getElementById("tweet[1]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[1]-1]; 
+
+        document.getElementById("video").defaultValue =  bannerdata.videos[bannerdata.video_selected-1]
+       
+        document.getElementById ("update").addEventListener ("click",function update()
+        {
+            for(var i=0; i<12; i++){
+                bannerdata.ads[bannerdata.ads_selected[i][0]-1]=document.getElementById("ad["+i+"][0]").value;
+                bannerdata.ads_links[bannerdata.ads_selected[i][1]-1]=document.getElementById("ad["+i+"][1]").value;
+        }
+
+        bannerdata.tweets[bannerdata.tweets_selected[0]-1]=document.getElementById("tweet[0]").value;
+        bannerdata.tweets[bannerdata.tweets_selected[1]-1]= document.getElementById("tweet[1]").value;
+
+
+        bannerdata.videos[bannerdata.video_selected-1]=document.getElementById("video").value;
+        console.log(bannerdata);
+        let req = new XMLHttpRequest();
+
+        req.onreadystatechange = () => {
+        if (req.readyState == XMLHttpRequest.DONE) {
+            console.log(req.responseText);
+            document.querySelector(".alert").style.display='block';
+ 
+
+        }
+        };
+
+        req.open("PUT", "https://api.jsonbin.io/v3/b/619470a001558c731cc3afae", true);
+        req.setRequestHeader("Content-Type", "application/json");
+        req.setRequestHeader("X-Master-Key", "$2b$10$AqjBU.xui4GAkXVjCFUlcuWvdDLC1.mFSkQqUqWBKP0.qYzkFaF5y");
+        req.send(JSON.stringify(bannerdata));
+
+        } , false);
+};
+}
+
+req.open("GET", "https://api.jsonbin.io/b/619470a001558c731cc3afae/latest", true);
+req.setRequestHeader("X-Master-Key", "$2b$10$AqjBU.xui4GAkXVjCFUlcuWvdDLC1.mFSkQqUqWBKP0.qYzkFaF5y");
+req.send();
+
+
+})
+              
+        // for(var i=0; i<12; i++){
+        //         document.getElementById("ad["+i+"][0]").defaultValue = bannerdata.ads[bannerdata.ads_selected[i][0]-1];
+        //         document.getElementById("ad["+i+"][1]").defaultValue = bannerdata.ads_links[bannerdata.ads_selected[i][1]-1]; 
+        // }
+
+        // document.getElementById("tweet[0]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[0]-1];
+        // document.getElementById("tweet[1]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[1]-1]; 
+
+        // document.getElementById("video").defaultValue =  bannerdata.videos[bannerdata.video_selected-1];
+
+
+    
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
