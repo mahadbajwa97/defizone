@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  <body class="home" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
+<style>
+    
+        .alert{
+    display: none;
+}
+    
+</style>
+    <body style="overflow: scroll"  cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">  
+        <header class="header show" style="background-color:#fff; display:flex; align-items:center">
+            
+                <div class="header__logo" style="width: 100%;display: flex; align-items:center; justify-content: center;">
+                    
+                        <img src="./logo.png" width="184" alt="" style="margin: auto; " />
+                    
+                </div>
+                     
+        </header>
+        
+            <div class="container" style="width: auto; margin: 0; padding-right: 20px;">
+                <div class="heron__one" style="padding-right: 30px;">
+                    
+                        
+                        <span class="filters" style="margin-left: auto;margin-right: 0; overflow: scroll">
+                            <span class="form_area">
+                               <div style="position: relative; overflow: scroll; margin-top: 50px;" action="/banner_update.php" method="get"> 
+                               <div class="bsc"><h1>Bsc:</h1> 
+                               <h2>Ad Boards:</h2>
+                                    <h3>First Ad(Top Banner):</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[0][0]" name="bscAd[0][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[0][1]" name="bscAd[0][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    
+                                    <h3>2nd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[1][0]" name="bscAd[1][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[1][1]" name="bscAd[1][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>3rd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[2][0]" name="bscAd[2][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[2][1]" name="bscAd[2][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>4th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[3][0]" name="bscAd[3][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[3][1]" name="bscAd[3][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>5th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[4][0]" name="bscAd[4][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[4][1]" name="bscAd[4][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>6th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[5][0]" name="bscAd[5][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[5][1]" name="bscAd[5][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>7th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[6][0]" name="bscAd[6][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[6][1]" name="bscAd[6][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>8th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[7][0]" name="bscAd[7][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[7][1]" name="bscAd[7][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>9th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[8][0]" name="bscAd[8][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[8][1]" name="bscAd[8][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>10th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[9][0]" name="bscAd[9][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[9][1]" name="bscAd[9][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>11th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[10][0]" name="bscAd[10][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[10][1]" name="bscAd[10][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>12th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[11][0]" name="bscAd[11][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bscAd[11][1]" name="bscAd[11][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Tweet Boards:</h2>
+                                    <h3>Tweet of the day:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="bsctweet[0]" name="tweet[0]" class="input_type" id="search_token" >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="bsctweet[1]" name="tweet[1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Video Boards:</h2>
+                                    <h3>Video of the day:</h3>
+                                    <label>Video path:<br/>
+                                        <input class="form-control" type="search" id="bscvideo" name="video" class="input_type" id="search_token" >
+                                    </label>
+</div>
+<div class="polygon"><h1>Polygon</h1>:</h1> 
+                               <h2>Ad Boards:</h2>
+                                    <h3>First Ad(Top Banner):</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[0][0]" name="polyAd[0][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[0][1]" name="polyAd[0][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    
+                                    <h3>2nd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[1][0]" name="polyAd[1][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[1][1]" name="polyAd[1][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>3rd Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[2][0]" name="polyAd[2][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[2][1]" name="polyAd[2][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>4th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[3][0]" name="polyAd[3][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[3][1]" name="polyAd[3][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>5th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[4][0]" name="polyAd[4][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[4][1]" name="polyAd[4][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>6th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[5][0]" name="polyAd[5][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[5][1]" name="polyAd[5][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>7th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[6][0]" name="polyAd[6][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[6][1]" name="polyAd[6][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>8th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[7][0]" name="polyAd[7][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[7][1]" name="polyAd[7][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>9th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[8][0]" name="polyAd[8][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[8][1]" name="polyAd[8][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>10th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[9][0]" name="polyAd[9][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[9][1]" name="polyAd[9][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>11th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[10][0]" name="polyAd[10][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[10][1]" name="polyAd[10][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h3>12th Ad:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[11][0]" name="polyAd[11][0]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polyAd[11][1]" name="polyAd[11][1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Tweet Boards:</h2>
+                                    <h3>Tweet of the day:</h3>
+                                    <label>Image path:<br/>
+                                        <input class="form-control" type="serach" id="polytweet[0]" name="tweet[0]" class="input_type" id="search_token" >
+                                    </label>
+                                    <label>Redirect Link:<br/>
+                                        <input class="form-control" type="serach" id="polytweet[1]" name="tweet[1]" class="input_type" id="search_token"  >
+                                    </label>
+                                    <h2>Video Boards:</h2>
+                                    <h3>Video of the day:</h3>
+                                    <label>Video path:<br/>
+                                        <input class="form-control" type="search" id="polyvideo" name="video" class="input_type" id="search_token" >
+                                    </label>
+</div><form action="action.php" method="post">
+                                    <input class="form-control" type="search" id="data" name="data" class="input_type" id="search_token" style="display: none">
+
+                                    <h3></h3>
+                                    <div class="alert alert-success alert-dismissable">
+                                                Updated Successfully
+                                    </div>
+                                    <br/>
+                                    <button type="submit" class="btn btn-primary form-button" id="update" style="width:30%; margin-bottom: 40px;">Update</button>
+</form>
+</div>
+                                    
+                                    
+                             
+                                </span>
+                            </span>  
+                    
+                    
+            
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+ 
+            <!-- <%- include(`${partials}/scripts`, {scriptname: 'changeBanner'}); -%> -->
+   
+<script>
+    
+    $(document).ready(async function(){
+    
+   
+   
+let req = new XMLHttpRequest();
+
+req.onreadystatechange = () => {
+  if (req.readyState == XMLHttpRequest.DONE) {
+    let bannerdata=parseXml(req.responseText);
+    bannerdata=xml2json(bannerdata);
+    console.log(bannerdata);
+ 
+    bannerdata=JSON.parse("{"+bannerdata+"}");
+
+    for(var i=0; i<12; i++){
+                document.getElementById("bscAd["+i+"][0]").defaultValue = bannerdata.root.bsc.ads.element[bannerdata.root.bsc.ads_selected.element[i].element[0]-1];
+                document.getElementById("bscAd["+i+"][1]").defaultValue = bannerdata.root.bsc.ads_links.element[bannerdata.root.bsc.ads_selected.element[i].element[1]-1];
+                document.getElementById("polyAd["+i+"][0]").defaultValue = bannerdata.root.polygon.ads.element[bannerdata.root.polygon.ads_selected.element[i].element[0]-1];
+                document.getElementById("polyAd["+i+"][1]").defaultValue = bannerdata.root.polygon.ads_links.element[bannerdata.root.polygon.ads_selected.element[i].element[1]-1]; 
+        }
+
+        document.getElementById("bsctweet[0]").defaultValue =  bannerdata.root.bsc.tweets.element[bannerdata.root.bsc.tweets_selected.element[0]-1];
+        document.getElementById("bsctweet[1]").defaultValue =  bannerdata.root.bsc.t_links.element[bannerdata.root.bsc.tweets_selected.element[1]-1]; 
+        document.getElementById("polytweet[0]").defaultValue =  bannerdata.root.polygon.tweets.element[bannerdata.root.polygon.tweets_selected.element[0]-1];
+        document.getElementById("polytweet[1]").defaultValue =  bannerdata.root.polygon.t_links.element[bannerdata.root.polygon.tweets_selected.element[1]-1]; 
+
+
+        document.getElementById("bscvideo").defaultValue =  bannerdata.root.bsc.videos.element[bannerdata.root.bsc.video_selected-1]
+        document.getElementById("polyvideo").defaultValue =  bannerdata.root.polygon.videos.element[bannerdata.root.polygon.video_selected-1]
+       
+        document.getElementById ("update").addEventListener ("click",function update()
+        {
+            for(var i=0; i<12; i++){
+                bannerdata.root.bsc.ads.element[bannerdata.root.bsc.ads_selected.element[i].element[0]-1]=document.getElementById("bscAd["+i+"][0]").value;
+                bannerdata.root.bsc.ads_links.element[bannerdata.root.bsc.ads_selected.element[i].element[1]-1]=document.getElementById("bscAd["+i+"][1]").value;
+                bannerdata.root.polygon.ads.element[bannerdata.root.polygon.ads_selected.element[i].element[0]-1]= document.getElementById("polyAd["+i+"][0]").value;
+                bannerdata.root.polygon.ads_links.element[bannerdata.root.polygon.ads_selected.element[i].element[1]-1]=document.getElementById("polyAd["+i+"][1]").value; 
+        }
+
+        bannerdata.root.bsc.tweets.element[bannerdata.root.bsc.tweets_selected.element[0]-1]= document.getElementById("bsctweet[0]").value;
+        bannerdata.root.bsc.t_links.element[bannerdata.root.bsc.tweets_selected.element[1]-1]= document.getElementById("bsctweet[1]").value;
+        bannerdata.root.polygon.tweets.element[bannerdata.root.polygon.tweets_selected.element[0]-1]=document.getElementById("polytweet[0]").value;
+        bannerdata.root.polygon.t_links.element[bannerdata.root.polygon.tweets_selected.element[1]-1]=document.getElementById("polytweet[1]").value; 
+
+        bannerdata.root.bsc.videos.element[bannerdata.root.bsc.video_selected-1]=document.getElementById("bscvideo").value;
+        bannerdata.root.polygon.videos.element[bannerdata.root.polygon.video_selected-1]=document.getElementById("polyvideo").value;
+
+        bannerdata=json2xml(bannerdata);
+        document.getElementById("data").value=  bannerdata;
+        } , false);
+};
+}
+
+req.open("GET", "/banner.xml", true);
+req.setRequestHeader("X-Master-Key", "$2b$10$AqjBU.xui4GAkXVjCFUlcuWvdDLC1.mFSkQqUqWBKP0.qYzkFaF5y");
+req.send();
+
+
+function parseXml(xml) {
+   var dom = null;
+   if (window.DOMParser) {
+      try { 
+         dom = (new DOMParser()).parseFromString(xml, "text/xml"); 
+      } 
+      catch (e) { dom = null; }
+   }
+   else if (window.ActiveXObject) {
+      try {
+         dom = new ActiveXObject('Microsoft.XMLDOM');
+         dom.async = false;
+         if (!dom.loadXML(xml)) // parse error ..
+
+            window.alert(dom.parseError.reason + dom.parseError.srcText);
+      } 
+      catch (e) { dom = null; }
+   }
+   else
+      alert("cannot parse xml string!");
+   return dom;
+}
+function json2xml(o, tab) {
+   var toXml = function(v, name, ind) {
+      var xml = "";
+      if (v instanceof Array) {
+         for (var i=0, n=v.length; i<n; i++)
+            xml += ind + toXml(v[i], name, ind+"\t") + "\n";
+      }
+      else if (typeof(v) == "object") {
+         var hasChild = false;
+         xml += ind + "<" + name;
+         for (var m in v) {
+            if (m.charAt(0) == "@")
+               xml += " " + m.substr(1) + "=\"" + v[m].toString() + "\"";
+            else
+               hasChild = true;
+         }
+         xml += hasChild ? ">" : "/>";
+         if (hasChild) {
+            for (var m in v) {
+               if (m == "#text")
+                  xml += v[m];
+               else if (m == "#cdata")
+                  xml += "<![CDATA[" + v[m] + "]]>";
+               else if (m.charAt(0) != "@")
+                  xml += toXml(v[m], m, ind+"\t");
+            }
+            xml += (xml.charAt(xml.length-1)=="\n"?ind:"") + "</" + name + ">";
+         }
+      }
+      else {
+         xml += ind + "<" + name + ">" + v.toString() +  "</" + name + ">";
+      }
+      return xml;
+   }, xml="";
+   for (var m in o)
+      xml += toXml(o[m], m, "");
+   return xml;
+}
+function xml2json(xml, tab) {
+   var X = {
+      toObj: function(xml) {
+         var o = {};
+         if (xml.nodeType==1) {   // element node ..
+            if (xml.attributes.length)   // element with attributes  ..
+               for (var i=0; i<xml.attributes.length; i++)
+                  o["@"+xml.attributes[i].nodeName] = (xml.attributes[i].nodeValue||"").toString();
+            if (xml.firstChild) { // element has child nodes ..
+               var textChild=0, cdataChild=0, hasElementChild=false;
+               for (var n=xml.firstChild; n; n=n.nextSibling) {
+                  if (n.nodeType==1) hasElementChild = true;
+                  else if (n.nodeType==3 && n.nodeValue.match(/[^ \f\n\r\t\v]/)) textChild++; // non-whitespace text
+                  else if (n.nodeType==4) cdataChild++; // cdata section node
+               }
+               if (hasElementChild) {
+                  if (textChild < 2 && cdataChild < 2) { // structured element with evtl. a single text or/and cdata node ..
+                     X.removeWhite(xml);
+                     for (var n=xml.firstChild; n; n=n.nextSibling) {
+                        if (n.nodeType == 3)  // text node
+                           o["#text"] = X.escape(n.nodeValue);
+                        else if (n.nodeType == 4)  // cdata node
+                           o["#cdata"] = X.escape(n.nodeValue);
+                        else if (o[n.nodeName]) {  // multiple occurence of element ..
+                           if (o[n.nodeName] instanceof Array)
+                              o[n.nodeName][o[n.nodeName].length] = X.toObj(n);
+                           else
+                              o[n.nodeName] = [o[n.nodeName], X.toObj(n)];
+                        }
+                        else  // first occurence of element..
+                           o[n.nodeName] = X.toObj(n);
+                     }
+                  }
+                  else { // mixed content
+                     if (!xml.attributes.length)
+                        o = X.escape(X.innerXml(xml));
+                     else
+                        o["#text"] = X.escape(X.innerXml(xml));
+                  }
+               }
+               else if (textChild) { // pure text
+                  if (!xml.attributes.length)
+                     o = X.escape(X.innerXml(xml));
+                  else
+                     o["#text"] = X.escape(X.innerXml(xml));
+               }
+               else if (cdataChild) { // cdata
+                  if (cdataChild > 1)
+                     o = X.escape(X.innerXml(xml));
+                  else
+                     for (var n=xml.firstChild; n; n=n.nextSibling)
+                        o["#cdata"] = X.escape(n.nodeValue);
+               }
+            }
+            if (!xml.attributes.length && !xml.firstChild) o = null;
+         }
+         else if (xml.nodeType==9) { // document.node
+            o = X.toObj(xml.documentElement);
+         }
+         else
+            alert("unhandled node type: " + xml.nodeType);
+         return o;
+      },
+      toJson: function(o, name, ind) {
+         var json = name ? ("\""+name+"\"") : "";
+         if (o instanceof Array) {
+            for (var i=0,n=o.length; i<n; i++)
+               o[i] = X.toJson(o[i], "", ind+"\t");
+            json += (name?":[":"[") + (o.length > 1 ? ("\n"+ind+"\t"+o.join(",\n"+ind+"\t")+"\n"+ind) : o.join("")) + "]";
+         }
+         else if (o == null)
+            json += (name&&":") + "null";
+         else if (typeof(o) == "object") {
+            var arr = [];
+            for (var m in o)
+               arr[arr.length] = X.toJson(o[m], m, ind+"\t");
+            json += (name?":{":"{") + (arr.length > 1 ? ("\n"+ind+"\t"+arr.join(",\n"+ind+"\t")+"\n"+ind) : arr.join("")) + "}";
+         }
+         else if (typeof(o) == "string")
+            json += (name&&":") + "\"" + o.toString() + "\"";
+         else
+            json += (name&&":") + o.toString();
+         return json;
+      },
+      innerXml: function(node) {
+         var s = ""
+         if ("innerHTML" in node)
+            s = node.innerHTML;
+         else {
+            var asXml = function(n) {
+               var s = "";
+               if (n.nodeType == 1) {
+                  s += "<" + n.nodeName;
+                  for (var i=0; i<n.attributes.length;i++)
+                     s += " " + n.attributes[i].nodeName + "=\"" + (n.attributes[i].nodeValue||"").toString() + "\"";
+                  if (n.firstChild) {
+                     s += ">";
+                     for (var c=n.firstChild; c; c=c.nextSibling)
+                        s += asXml(c);
+                     s += "</"+n.nodeName+">";
+                  }
+                  else
+                     s += "/>";
+               }
+               else if (n.nodeType == 3)
+                  s += n.nodeValue;
+               else if (n.nodeType == 4)
+                  s += "<![CDATA[" + n.nodeValue + "]]>";
+               return s;
+            };
+            for (var c=node.firstChild; c; c=c.nextSibling)
+               s += asXml(c);
+         }
+         return s;
+      },
+      escape: function(txt) {
+         return txt.replace(/[\\]/g, "\\\\")
+                   .replace(/[\"]/g, '\\"')
+                   .replace(/[\n]/g, '\\n')
+                   .replace(/[\r]/g, '\\r');
+      },
+      removeWhite: function(e) {
+         e.normalize();
+         for (var n = e.firstChild; n; ) {
+            if (n.nodeType == 3) {  // text node
+               if (!n.nodeValue.match(/[^ \f\n\r\t\v]/)) { // pure whitespace text node
+                  var nxt = n.nextSibling;
+                  e.removeChild(n);
+                  n = nxt;
+               }
+               else
+                  n = n.nextSibling;
+            }
+            else if (n.nodeType == 1) {  // element node
+               X.removeWhite(n);
+               n = n.nextSibling;
+            }
+            else                      // any other node
+               n = n.nextSibling;
+         }
+         return e;
+      }
+   };
+   if (xml.nodeType == 9) // document node
+      xml = xml.documentElement;
+   var json = X.toJson(X.toObj(X.removeWhite(xml)), xml.nodeName, "\t");
+   return json;
+}
+
+})
+              
+        // for(var i=0; i<12; i++){
+        //         document.getElementById("bscAd["+i+"][0]").defaultValue = bannerdata.ads[bannerdata.ads_selected[i][0]-1];
+        //         document.getElementById("bscAd["+i+"][1]").defaultValue = bannerdata.ads_links[bannerdata.ads_selected[i][1]-1]; 
+        // }
+
+        // document.getElementById("tweet[0]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[0]-1];
+        // document.getElementById("tweet[1]").defaultValue =  bannerdata.tweets[bannerdata.tweets_selected[1]-1]; 
+
+        // document.getElementById("video").defaultValue =  bannerdata.videos[bannerdata.video_selected-1];
+
+
+    
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

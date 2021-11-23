@@ -71,7 +71,8 @@
                     
                     <div class="heron__content inner_page" >
                         <!-- Content here -->
-                        <div class="list_header" style="margin-bottom: 200px;">
+                        <div class="list_header" >
+
                             <div class="vault-header w-100">                                
                                 <div class="information-container">
                                     <div class="vault-staked" style="width: 27%;">
@@ -150,7 +151,7 @@
                 htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">' + _pool_prov + '</span> </div></div>'
                 let _lp = tableData.rows[i][2]  
                 htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">'+
-                     '<button type="button" class="btn btn-default form-button">'+_lp +'</button>'+'</span></div></div>'
+                     ''+_lp +''+'</span></div></div>'
                 let _reward_token = tableData.rows[i][3] 
                 htmlstr += '<div class="bl balance"><div class="vault-form"><span class="title">' + _reward_token + '</span> </div></div>'   
                 let _info = tableData.rows[i][4] 

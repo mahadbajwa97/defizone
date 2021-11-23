@@ -8,17 +8,7 @@ const lookUpTokenPrices = async function(id_array) {
     const text = await res.text();
     return JSON.parse(text);
 }
-function updateBanner(output) {
-    const content = JSON.stringify(output);
-    
-    fs.writeFile('/banner.json', content, 'utf8', function (err) {
-        if (err) {
-            return console.log(err);
-        }
-    
-        return "The file was saved!";
-    });
-}
+
 
 function getParameterCaseInsensitive(object, key) {
     return object[Object.keys(object)
