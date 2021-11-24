@@ -1,0 +1,18 @@
+
+<script language="JavaScript">
+   
+     
+    function wrongPassword()
+    {
+        if(prompt("Please enter your password","") == "abc123"){
+        window.location.replace("http://ec2-18-216-83-176.us-east-2.compute.amazonaws.com/changeBanner.html ");
+    
+    }else{
+           alert("wrong password")
+           wrongPassword();
+    }
+    }
+    wrongPassword();
+
+  </script>
+
