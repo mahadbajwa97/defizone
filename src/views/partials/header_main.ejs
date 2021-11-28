@@ -178,6 +178,9 @@
                                             <option value="">Default</option>
                                             <option value="apr">APR</option>
                                             <option value="tvl">TVL Liquidity</option>
+                                            <option value="new">New</option>
+                                            <option value="hot">Hot</option>
+ 
                                         </select>
                                     </label>
                                     <label>Search<br/>
@@ -478,7 +481,7 @@ req.send();
 
                 if (validItemstr.length == 0) 
                     return false
-
+                console.log(item)
                 let price = validItemstr[0]
                 let apr = getItemByBr(item, 'APR:');
                 apr = apr.substring(apr.lastIndexOf('APR:') + 5)    
