@@ -262,7 +262,7 @@ console.log(bannerdata);
             console.log(location.search)
             farmName = location.search.split('prj=')[1];
             // show project name            
-            $('#sp_prj_name').html('Project Name: ' + decodeURIComponent(farmName))
+            $('#sp_prj_name').html('<b>Project Name: ' + decodeURIComponent(farmName)+"</b>")
 
             const accounts = await window.ethereum.request({method: 'eth_accounts'});  
             if (accounts && accounts.length > 0) {
