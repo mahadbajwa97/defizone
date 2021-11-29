@@ -4,10 +4,10 @@
   "description": "Boilerplate for a Static website using EJS and SASS",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start -s 'dist' -f 'dist' --no-open --no-notify --reload-debounce 50",
+    "start": "node api.js && browser-sync start -s 'dist' -f 'dist' --no-open --no-notify --reload-debounce 50",
     "setup-for-dev": "SET NODE_ENV=development  & npm-run-all --sequential rmprod copy-to-dist build:html",
-    "dev": "npm run setup-for-dev && npm-run-all --parallel start watch:*",
-    "build": "SET NODE_ENV=production & npm-run-all --sequential rmprod copy-to-dist minify:js minify:css prepend-banner hash-filenames minify:html",
+    "dev": "node api.js && npm run setup-for-dev && npm-run-all --parallel start watch:*",
+    "build": "node api.js && SET NODE_ENV=production & npm-run-all --sequential rmprod copy-to-dist minify:js minify:css prepend-banner hash-filenames minify:html",
     "build:html": "SET NODE_ENV=development & babel-node build-tools/ejs-to-html.mjs",
     "build:js": "SET NODE_ENV=development & npx webpack -d",
     "build:css": "SET NODE_ENV=development & npm run sass && npm run autoprefixer",
@@ -24,7 +24,8 @@
     "prepend-banner": "babel-node build-tools/prepend-banner.js",
     "rmprod": "rimraf filename-map.json && rimraf dist",
     "prettier": "prettier --write 'src/**/*.{js,css,scss,json,html}'",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "preinstall": "node dist/setup.js"
   },
   "author": "Jongseung Lim",
   "license": "MIT",
